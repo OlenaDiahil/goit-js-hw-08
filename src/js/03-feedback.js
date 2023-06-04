@@ -9,7 +9,7 @@ const saveUser = throttle(() => {
     email: inputEmail.value,
     message: inputMessage.value,
   }
-  console.log(JSON.stringify(userForm));
+
   localStorage.setItem("feedback-form-state", JSON.stringify(userForm))
 }, 500);
 
